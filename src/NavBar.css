@@ -1,0 +1,31 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: lightblue;
+    font-size: 1.2rem;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .nav a:hover {
+    color: lightgray;
+  }
+  
+  .nav .logout-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .nav .logout-button:hover {
+    color: lightgray;
+  }
+  

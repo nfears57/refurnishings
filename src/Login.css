@@ -1,0 +1,65 @@
+.toggle-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center the form horizontally */
+}
+.login {
+    background-color: lightsteelblue;
+  }
+  
+
+
+.toggle-button {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.toggle-button .user-side,
+.toggle-button .seller-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.toggle-button .user-side {
+    background: #999;
+    border-radius: 30px 0 0 30px;
+}
+
+.toggle-button .seller-side {
+    background: #777;
+    border-radius: 0 30px 30px 0;
+    left: 50%;
+    display: none;  /* hide the seller side by default */
+}
+
+.toggle-button.active .seller-side {
+    display: block;  /* show the seller side when the toggle button is clicked */
+}
+
+.toggle-button:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.toggle-button.active:before {
+    left: 52px;
+}

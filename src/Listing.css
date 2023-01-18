@@ -1,0 +1,15 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.listing-image {
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    background-color: green;
+    color: white;
+}
